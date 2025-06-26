@@ -3,30 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Error - John's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>404 - Page Not Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 2rem;
+      background-color: #ffffffcc;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    h1 {
+      font-size: 6rem;
+      color: #007bff;
+      font-family: 'Lobster', cursive;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 1rem 0 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <!-- Header section -->
-  <header>
-    <h1>John's Portfolio</h1>
-    <nav>
-      <!-- Add navigation links here if needed -->
-    </nav>
-  </header>
-
-  <!-- Error section -->
-  <section id="error">
-    <h2>Error</h2>
-    <div class="error-message">
-      <h3>Oops! Something went wrong.</h3>
-      <p>We apologize for the inconvenience. The page you are looking for cannot be found or is currently unavailable.</p>
-      <a href="index.html">Go back to the homepage</a>
-    </div>
-  </section>
-
-  <!-- Add more sections as needed (e.g., About, Contact, etc.) -->
-
-  <script src="app.js"></script>
+  <div class="container">
+    <h1>404</h1>
+    <h2>Oops! Page Not Found</h2>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <a href="index.html">← Go Back to Home</a>
+  </div>
 </body>
 </html>
